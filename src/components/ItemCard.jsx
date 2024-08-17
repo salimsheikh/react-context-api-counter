@@ -1,16 +1,13 @@
 import React from 'react'
-import {getCart } from '../contexts/CartContext'
+import { getCart } from '../contexts/CartContext'
 
-const ItemCard = ({name, price}) => {
-
-    const cart = getCart();
-
-    console.log("Cart", cart);
+const ItemCard = ({ name, price }) => {
+  const cart = getCart();
   return (
     <div className='item-card'>
-        <h4>{name}</h4>
-        <p>Price: ${price}</p>
-        <button onClick={() => cart.setItems([...cart.items, {name: name, price: price}])}>Add To Card</button>
+      <h4>{name}</h4>
+      <p>Price: ${price}</p>
+      <button onClick={() => cart.setItems([...cart.items, { name: name, price: price }])}>Add To Card</button>
     </div>
   )
 }

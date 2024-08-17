@@ -45,6 +45,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  margin: 5px;
 }
 button:hover {
   border-color: #646cff;
@@ -55,7 +57,7 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root {    
     color: #213547;
     background-color: #ffffff;
   }
@@ -65,4 +67,30 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.dark {
+  body{ 
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+
+  button {
+    border: 1px solid #bebebe;
+    background-color:#1a1a1a;
+    color: #fff;
+  }
+
+  button:disabled,
+  button[disabled]{
+    color: #aaaaaa;
+    border-color: #aaaaaa;
+  }
+
+  button:active,
+  button:[active]{
+    color: #213547;
+  }
+
 }
