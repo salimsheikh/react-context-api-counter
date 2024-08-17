@@ -33,7 +33,7 @@ function App() {
         </div>
 
         <hr />
-        <div style={{ display: "flex" }}>
+        <div className='products'>
           <ItemCard name="Keyboard" price={350} />
           <ItemCard name="Mouse" price={300} />
           <ItemCard name="Harddisk" price={1200} />
